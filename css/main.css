@@ -5,7 +5,7 @@
   
 body {
     background: black;
-    color: white;
+    color: rgb(232, 230, 227);
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
@@ -27,7 +27,7 @@ h3, h4 {
 .header {
     font-family: necrosans;
     text-align: center;
-    border-bottom: 1px dashed white;
+    border-bottom: 1px dashed rgb(48, 52, 54);
     padding: 15px;
 }
 
@@ -35,7 +35,7 @@ h3, h4 {
     min-width: 400px;
     width: 70%;
     margin: auto;
-    background: #151515;
+    background: rgb(16, 17, 18);
 }
 
 .subcontent {
@@ -50,7 +50,7 @@ a {
     display: flex;
     width: 95%;
     margin: auto;
-    border: 1px dashed white;
+    border: 1px dashed rgb(48, 52, 54);
 }
 
 .item-image-name {
@@ -59,7 +59,7 @@ a {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    border-right: 1px dashed white;
+    border-right: 1px dashed rgb(48, 52, 54);
     padding: 5px;
     min-width: 128px;
     max-width: 128px;
@@ -83,14 +83,14 @@ a {
 .event-wrapper {
     width: 95%;
     margin: auto;
-    border: 1px dashed white;
+    border: 1px dashed rgb(48, 52, 54);
     display: flex;
 }
 
 .event-name {
     min-width: 160px;
     max-width: 160px;
-    border-right: 1px dashed white;
+    border-right: 1px dashed rgb(48, 52, 54);
     padding: 5px;
     font-family: necrosans;
     display: flex;
