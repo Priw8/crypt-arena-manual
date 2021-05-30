@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="img/icon.png">
+        <title>Crypt Arena - instruction manual</title>
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <div class="header">
+                <h1>--- Crypt Arena ---</h1>
+                <img src="img/icon.png">
+                <h3>Official instruction manual</h3>
+                <h5>v1.7.0</h5>
+            </div>
+            <div class="subcontent">
+                <h3>Table of contents</h3>
+                <ul>
+                    <li><a href="#TheBasics">The basics</a></li>
+                    <li><a href="#GameModes">Game modes</a></li>
+                    <li><a href="#Items">Items</a></li>
+                    <li><a href="#ArenaEvents">Arena events</a></li>
+                    <li><a href="#Shops">Shops</a></li>
+                    <li><a href="#Settings">Settings</a></li>
+                    <li><a href="#DetailedMechanics">Detailed mechanics</a></li>
+                </ul>
+
+                <h3 id="TheBasics">1. The basics</h3>
+                <p>Crypt Arena is a PvP mod - this means that instead of going through the floors of the crypt normally, you
+                fight other players! Use numerous familiar items, and some new ones too, to your advantage to come out on top!</p>
+
+                <p>At the beginning of the game, all players are sent to their starting rooms, where they can choose 3 items - one from each
+                set of 3 random ones. After that, they are brought to the arena where they fight it out and can find more randomly spawned items.</p>
+
+                <h3 id="GameModes">2. Game modes</h3>
+                <p>The mod features 2 different game modes - last man standing is rather simple, and as the name suggests, the player that
+                manages to outlast all other players gets the win.</p>
+
+                <p>Deathmatch mode has a bit more to it - shortly after getting killed, players respawn in their starting rooms.
+                Here, the winner is the player that gets the most points, which are awarded for killing others. More details of how
+                the points are awarded can be found in the <a href="#DeathmatchPoints">Detailed mechanics</a> section.</p>
+
+                <p>You can also play in teams for both of these game modes! Teams can be enabled within mod settings of Crypt Arena.</p>
+
+                <h3 id="Items">3. Items</h3>
+                <p>
+                    Many items you know from regular Crypt of the Necrodancer can be found in Crypt Arena as well, although some 
+                    were modified a bit for balancing reasons. Certain new items also appear - this section explains all the changes and new items!
+                </p>
+
+                <div class="items">
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/tome_electricity.png">
+                        </div>
+                        <div class="item-name">Electricity tomes</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        Temporarily grant electricity effect for a short time after use. The effect stacks with other sources with electricity,
+                        such as the wire or arc dagger.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/tome_wind.png">
+                        </div>
+                        <div class="item-name">Wind tomes</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        Use these to push away nearby enemies and players. If you push a player into a trap or an enemy that kills them, you get the
+                        point for the kill in deathmatch mode! You can even use them to "kick" bombs - isn't that neat?
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/tome_fireball.png">
+                            <img src="img/items/scroll_fireball.png">
+                            <img src="img/items/spell_fireball.png">
+                        </div>
+                        <div class="item-name">Fireball items</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        Fireball items received some balance modifications to be more suitable for PvP - they now have limited range
+                        (3 tiles in both horizontal directions), and normal fireball deals 2 damage while greater fireball deals 4.
+                        Despite the reduced damage, regular fireball can still be used to open crates.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/tome_pulse.png">
+                            <img src="img/items/scroll_pulse.png">
+                            <img src="img/items/spell_pulse.png">
+                        </div>
+                        <div class="item-name">Pulse items</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        Pulse items also received balance modifications - similar to fireballs, regular pulse deals 2 damage and greater
+                        pulse deals 4. Both versions of the spell are now also piercing. Like fireballs, pulse can still be used to open
+                        crates, even with 2 damage.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/spell_all.png">
+                        </div>
+                        <div class="item-name">All spells</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        All spells had their cooldowns and blood cast costs reduced to values more suitable for PvP.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/item_infuse_titanium.png">
+                        </div>
+                        <div class="item-name">Titanium infuse</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        <a href="#Infuse">Infuses</a> your current weapon to titanium, if it has a titanium version. Otherwise, it can't be used.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/item_infuse_obsidian.png">
+                        </div>
+                        <div class="item-name">Obsidian infuse</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        <a href="#Infuse">Infuses</a> your current weapon to obsidian, if it has an obsidian version. Otherwise, it can't be used.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/item_infuse_ruby.png">
+                        </div>
+                        <div class="item-name">Ruby infuse</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        <a href="#Infuse">Infuses</a> your current weapon to ruby, if it has a ruby version. Otherwise, it can't be used. Ruby weapons
+                        have 1 base damage, piercing, and heal 0.5 heart every 5 kills.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/item_infuse_emerald.png">
+                        </div>
+                        <div class="item-name">Emerald infuse</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        <a href="#Infuse">Infuses</a> your current weapon to emerald, if it has an emerald version. Otherwise, it can't be used. Emerald weapons
+                        have 1 base damage and <a href="#Poison">poison</a> the target of the attack.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/ring_gluttony.png">
+                        </div>
+                        <div class="item-name">Ring of gluttony</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        Having this ring equipped makes consumed food heal additional 0.5 heart.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/ring_whirlwind.png">
+                        </div>
+                        <div class="item-name">Ring of whirldwind</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        When you get hit with this ring equipped, damage is prevented, a greater wind spell (see wind tomes) is casted and the ring shatters.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/ring_regeneration.png">
+                        </div>
+                        <div class="item-name">Ring of regeneration</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        Ring of regeneration has been modified to provide a 0.5 heart heal every 50 beats.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/ring_peace.png">
+                        </div>
+                        <div class="item-name">Ring of peace</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        Ring of peace has been modiified to make the holder invisible to enemies (but not other players).
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/weapon_dagger_electric.png">
+                        </div>
+                        <div class="item-name">Arc dagger</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        Modified to provide a +2 damage boost while standing on the wire, instead of infinite damage. Using an electricity tome
+                        will also grant the damage boost.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-description-wrapper">
+                    <div class="item-image-name">
+                        <div class="item-image">
+                            <img src="img/items/shovel_battle.png">
+                        </div>
+                        <div class="item-name">Battle shovel</div>
+                    </div>
+                    <div class="item-description">
+                        <div>
+                        Modified to provide a +2 damage boost after digging, instead of infinite damage.
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <h3 id="ArenaEvents">4. Arena events</h3>
+                <p>
+                    As you play and fight other players, various events will happen to spice things up - they can range from
+                    changing some floor to a hazard like hot coals to spawning a powerful miniboss that may drop a nice item
+                    after being defeated. This section lists all events that can happen.
+                </p>
+
+                <div class="events">
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Floor modification
+                        </div>
+                        <div class="event-description">
+                            <p>Changes some of the floor to a random hazard, such as hot coals or ice.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Wall modification
+                        </div>
+                        <div class="event-description">
+                            <p>Places some walls of random type in some locations.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Tempo up
+                        </div>
+                        <div class="event-description">
+                            <p>Temporarily increases music speed.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Tempo down
+                        </div>
+                        <div class="event-description">
+                            <p>Temporarily decreases music speed.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Shop travel rune
+                        </div>
+                        <div class="event-description">
+                            <p>Spawns a travel rune to a random <a href="#Shops">shop</a> somewhere.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Electricity
+                        </div>
+                        <div class="event-description">
+                            <p>Grants a temporary electricity effect to all players.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Riches
+                        </div>
+                        <div class="event-description">
+                            <p>Everyone receives 65 gold.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Boss
+                        </div>
+                        <div class="event-description">
+                            <p>A boss spawns in the middle of the arena - after getting killed, it will drop an item.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Gigantism
+                        </div>
+                        <div class="event-description">
+                            <p>Every player becomes bigger for 20 beats.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Urn
+                        </div>
+                        <div class="event-description">
+                            <p>An urn containing 3 items spawns somewhere.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            No return mode
+                        </div>
+                        <div class="event-description">
+                            <p>Activates no return mode. Stepping into no return tiles of other players will not damage you.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Whoops, all glass
+                        </div>
+                        <div class="event-description">
+                            <p>:)</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Bombardment
+                        </div>
+                        <div class="event-description">
+                            <p>Spawns bombs near every player. The bombs have a longer fuse than regular ones.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            Confusion
+                        </div>
+                        <div class="event-description">
+                            <p>Confuses every player.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 id="Shops">5. Shops</h3>
+                <p>
+                    Shop travel runes spawn in various places through the shop travel rune event.
+                </p>
+                <div class="shops">
+                    <div class="item-description-wrapper">
+                        <div class="item-image-name">
+                            <div class="item-image">
+                                <img src="img/traps/travelrune_shop.png">
+                            </div>
+                            <div class="item-name">Gold shop</div>
+                        </div>
+                        <div class="item-description">
+                            <div>
+                            A shop that sells 5 items for gold.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-description-wrapper">
+                        <div class="item-image-name">
+                            <div class="item-image">
+                                <img src="img/traps/travelrune_blood.png">
+                            </div>
+                            <div class="item-name">Blood shop</div>
+                        </div>
+                        <div class="item-description">
+                            <div>
+                            A shop that sells 5 items for health.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-description-wrapper">
+                        <div class="item-image-name">
+                            <div class="item-image">
+                                <img src="img/traps/travelrune_transmog.png">
+                            </div>
+                            <div class="item-name">Transmogrifier</div>
+                        </div>
+                        <div class="item-description">
+                            <div>
+                            Allows you to transmogrify items. When transmogrifying weapons, the infuse will not change
+                            (when transmogrifying titanium, the resulting weapon is guaranteed to be titanium as well).
+                            Every player has a separate, increasing price.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-description-wrapper">
+                        <div class="item-image-name">
+                            <div class="item-image">
+                                <img src="img/traps/travelrune_conjure.png">
+                            </div>
+                            <div class="item-name">Conjurer</div>
+                        </div>
+                        <div class="item-description">
+                            <div>
+                            Allows you to conjure items. Every player has a separate, increasing price.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-description-wrapper">
+                        <div class="item-image-name">
+                            <div class="item-image">
+                                <img src="img/traps/travelrune_pawnbroker.png">
+                            </div>
+                            <div class="item-name">Pawnbroker</div>
+                        </div>
+                        <div class="item-description">
+                            <div>
+                            Allows you to sell items. Unlike in the regular game, the pawnbroker is willing to pay a lot for your items!
+                            In fact, if you buy an item and then sell it, you'll gain a bit of money.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    None of the shopkeepers can be killed in Crypt Arena. Gold shop and Blood shop have a chance to have a
+                    super secret shop behind the top wall, which contains an additional, cheap item.
+                </p>
+
+                <h3 id="Settings">6. Settings</h3>
+                <p>This section explains what all settings available in mod settings do.</p>
+
+                <div class="settings-section settings-game-mode">
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Game Mode</div>
+                            <div>Mode</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Choose between last man standing and deathmatch.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Game Mode</div>
+                            <div>Deathmatch duration</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Set game duration for deathmatch mode.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Game Mode</div>
+                            <div>Preserve items on death</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Determines whether dying in deathmatch mode should reset the player to starting inventory or not.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Game Mode</div>
+                            <div>Teams</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Determines the team mode - they can be either turned off, assigned randomly or manually selected.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Game Mode</div>
+                            <div>Number of teams</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Number of teams that's used if teams are not turned off.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Game Mode</div>
+                            <div>Team handicap</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Increase health of players in smaller teams.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-section settings-items">
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Items</div>
+                            <div>Same starting items for everyone</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Determines whether the starting items are seeded or not. This also affects seeding of items
+                                after respawning in deathmatch mode.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Items</div>
+                            <div>Starting item tier</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Select from one of 3 available <a href="#ItemTiers">starting item tiers</a>.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Items</div>
+                            <div>Initial random item tier</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Set the <a href="#ItemTiers">initial random item tier.</a>.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Items</div>
+                            <div>Chest spawn interval</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Base interval (in beats) for chest spawns. The interval that's used is this value divided by the number of
+                                players currently alive.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section settings-sarcs">
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Sarcophagus</div>
+                            <div>Spawn cap</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Determines the maximum amount of alive enemies that a sarcophagus can spawn.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Sarcophagus</div>
+                            <div>Spawn interval</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Determines how often a sarcophagus spawns enemies.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Sarcophagus</div>
+                            <div>Initial tier</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Initial tier of the enemies spawned by a sarcophagus.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Sarcophagus</div>
+                            <div>Tier upgrade</div>
+                        </div>
+                        <div class="event-description">
+                            <p>After how many enemies spawned the sarcophagus tier gets increased. Can still get increased
+                                if spawning fails due to the spawn cap.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section settings-starting-health">
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Starting health</div>
+                            <div>Use custom starting health</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Determines whether the value below is used.</p>
+                        </div>
+                    </div>
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Starting health</div>
+                            <div>Starting health</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Starting health that gets applied to all players if the setting above is enabled.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section settings-misc">
+                    <div class="event-wrapper">
+                        <div class="event-name">
+                            <div class="category">Miscellaneus</div>
+                            <div>Late joins</div>
+                        </div>
+                        <div class="event-description">
+                            <p>Determines whether late-joining into the game is allowed or not.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3 id="DetailedMechanics">7. Detailed mechanics</h3>
+                This section provides more in-depth explanations of various mechanics present in the mod.
+
+                <h4 id="Penetration">Attack penetration</h4>
+                <p>
+                    Piercing and phasing attack effects have an effect not only on enemies but also other players.
+                    Piercing bypasses armor, and phasing damage is completely unavoidable (bypasses even iframes!)
+                </p>
+
+                <h4 id="Infuse">Infusing</h4>
+                <p>
+                    By using items such as Titanium infuse, you can change the type of your weapon. This affects the equipped weapon
+                    specifically, the one in the holster is left unchanged. With a few exceptions, non-base weapon types can only
+                    be obtained by infusing a base weapon.
+                </p>
+                <p>
+                    Attempting to infuse a weapon that can not be infused (such as a rifle), will not consume the infuse item - 
+                    infusing will simply fail and display a flyaway.
+                </p>
+                <p>
+                    As mentioned in the <a href="#Shops">Shops</a> section, transmogrifying a weapon keeps the current infuse.
+                    You can use this to change your weapon type without giving up the effect of the previously used item.
+                </p>
+
+                <h4 id="Poison">Poison</h4>
+                <p>
+                    Poison can be applied to players and enemies through the use of emerald weapons. Poisoned characters have
+                    a slight green color applied to their sprites, to indicate the status effect being active. After 3 beats of being poisoned,
+                    characters take 0.5 heart of unavoidable damage and the poison status goes away.
+                </p>
+                <p>
+                    Consumable food can be used in order to remove the active poison status. This is the only way to avoid poison damage
+                    once the status has been applied.
+                </p>
+                <p>
+                    When poison kills a character, the player who applied the status effect is credited for the kill.
+                </p>
+
+                <h4 id="DeathmatchPoints">Points in deathmatch mode</h4>
+                <p>
+                    You get 1 point for every player you kill with direct damage and poison. But apart from that, when you
+                    deal damage to someone, the victim of the attack is flagged as most recently damaged by you.
+                    If they happen to die to non-player damage within 8 beats after that, you'll get the point for the kill as well.
+                </p>
+                <p>
+                    Pushing a player by using wind spell sets the flag mentioned above as well, but only for 3 beats. It is assumed
+                    that if someone was wind spelled and then immidiately died to non-player damage, the spell was deliberately used to
+                    send the player into danger, and as such the caster should be credited for the kill.
+                </p>
+                <p>
+                    Dying when no one recently damaged you gives you 1 negative point as a penalty.
+                </p>
+
+                <h4 id="ItemTiers">Item tiers</h4>
+                <p>
+                    There are 3 tiers of starting items, and which one is used is determined by the starting item tier setting.
+                    This tier never increases - after respawning in deathmatch mode, the same one will be used every time.
+                </p>
+                <p>
+                    Non-starting items (the ones that spawn in chests, shops) also have 3 tiers - however, they are separate.
+                    The initial random item tier can be customized within settings, and it's a decimal value.
+                    It slowly increases over time. Which tier is used based on the value is determined as follows:
+                    <ul>
+                        <li>0.0 - 1.0 - only items from tier 1 can spawn</li>
+                        <li>1.0 - 2.0 - items from tier 1 and tier 2 can spawn. The closer the value is to 2.0, the more likely
+                            it is that the spawned item will be tier 2.
+                        </li>
+                        <li>2.0 - 3.0 - items from tier 2 and tier 3 can spawn. The closer the value is to 3.0, the more likely
+                            it is that the spawned item will be tier 3.
+                        </li>
+                        <li>3.0 - only items from tier 3 will spawn. The value does not increase further once it reaches 3.0.</li>
+                    </ul>
+                    There is also a secret item tier than can very rarely be used instead of the one determined by the item tier value.
+                    It contains special items like leaping. It does not contain any items that could put the finder at a big advantage.
+                </p>
+                <p>
+                    Crates have a chance to contain a random food item instead of an item based on the item tier.
+                </p>
+                <p>
+                    Urns have a special item pool that's only used by them.
+                </p>
+
+                <h4 id="EventTiers">Event tiers</h4>
+                <p>
+                    Events also have tiers, and the item tier value is used to detemine the event pool that a random event should
+                    be chosen from. It's mostly to prevent certain events from happening early in the game.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

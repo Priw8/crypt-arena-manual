@@ -1,0 +1,124 @@
+@font-face {
+    font-family: necrosans;
+    src: url(necrosans.ttf);
+  }
+  
+body {
+    background: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: unset;
+    font-family: necrosans;
+}
+
+h3, h4 {
+    margin-top: 30px;
+}
+
+.header {
+    font-family: necrosans;
+    text-align: center;
+    border-bottom: 1px dashed white;
+    padding: 15px;
+}
+
+.content-wrapper {
+    min-width: 400px;
+    width: 70%;
+    margin: auto;
+    background: #151515;
+}
+
+.subcontent {
+    padding: 20px;
+}
+
+a {
+    color: lightblue;
+}
+
+.item-description-wrapper {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    border: 1px dashed white;
+}
+
+.item-image-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-right: 1px dashed white;
+    padding: 5px;
+    min-width: 128px;
+    max-width: 128px;
+}
+
+.item-name {
+    font-family: necrosans;
+    text-align: center;
+}
+
+.item-image {
+    position: relative;
+}
+
+.item-description {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.event-wrapper {
+    width: 95%;
+    margin: auto;
+    border: 1px dashed white;
+    display: flex;
+}
+
+.event-name {
+    min-width: 160px;
+    max-width: 160px;
+    border-right: 1px dashed white;
+    padding: 5px;
+    font-family: necrosans;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-name > * {
+    text-align: center;
+}
+
+.event-description {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.category {
+    font-size: 80%;
+    color: darkgray;
+}
+
+.settings-section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+:target {
+    color: yellow;
+}
