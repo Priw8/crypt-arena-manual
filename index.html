@@ -738,6 +738,21 @@
                 <h3 id="DetailedMechanics">8. Detailed mechanics</h3>
                 This section provides more in-depth explanations of various mechanics present in the mod.
 
+                <h4 id="PvPTweaks">The PvPTweaks mod</h4>
+                <p>
+                    Crypt Arena has the PvPTweaks mod set as a depencency. It's used to enforce strict ordering rules for actions
+                    that otherwise would depend on the input timing. Player actions are resolved in the following order during a given beat:
+                    <ol>
+                        <li>item/spell usage</li>
+                        <li>weapon attacks</li>
+                        <li>movement</li>
+                    </ol>
+                    For example, this means that you are always able to use a defensive item before you get hit by an attack from another player.
+                    It also means that if you are in attack range of someone, then they can hit you no matter which direction you move, since
+                    the attack will land before movement. This prevents really awkward rollback that could potentially happen for
+                    multiple beats in a row the order was different.
+                </p>
+
                 <h4 id="Penetration">Attack penetration</h4>
                 <p>
                     Piercing and phasing attack effects have an effect not only on enemies but also other players.
