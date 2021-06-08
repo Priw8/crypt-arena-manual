@@ -695,15 +695,6 @@
                     <div class="event-wrapper">
                         <div class="event-name">
                             <div class="category">Items</div>
-                            <div>Starting item tier</div>
-                        </div>
-                        <div class="event-description">
-                            <p>Select from one of 3 available <a href="#ItemTiers">starting item tiers</a>.</p>
-                        </div>
-                    </div>
-                    <div class="event-wrapper">
-                        <div class="event-name">
-                            <div class="category">Items</div>
                             <div>Initial random item tier</div>
                         </div>
                         <div class="event-description">
@@ -879,13 +870,9 @@
 
                 <h4 id="ItemTiers">Item tiers</h4>
                 <p>
-                    There are 3 tiers of starting items, and which one is used is determined by the starting item tier setting.
-                    This tier never increases - after respawning in deathmatch mode, the same one will be used every time.
-                </p>
-                <p>
-                    Non-starting items (the ones that spawn in chests, shops) also have 3 tiers - however, they are not the same tiers as the ones above.
+                    Non-starting items (the ones that spawn in chests, shops) have 3 tiers.
                     The initial random item tier can be customized within settings, and it's a decimal value.
-                    It slowly increases over time. Which tier is used based on the value is determined as follows:
+                    It slowly increases over time (how fast can also be changed). Which tier is used based on the value is determined as follows:
                     <ul>
                         <li>0.0 - 1.0 - only items from tier 1 can spawn</li>
                         <li>1.0 - 2.0 - items from tier 1 and tier 2 can spawn. The closer the value is to 2.0, the more likely
@@ -898,6 +885,17 @@
                     </ul>
                     There is also a secret item tier than can very rarely be used instead of the one determined by the item tier value.
                     It contains special items like leaping. It does not contain any items that could put the finder at a big advantage.
+                </p>
+                <p>
+                    When a round ends and the next one starts in multi-round deathmatch mode, the item tier is not fully reset.
+                    It gets set to a value between the initial random item tier and the one at the end of the round.
+                </p>
+                <p>
+                    Starting items use a bit different, although similar rules to the ones above. They have a separate item pool which
+                    also has 3 tiers, but the random item tier value does not increase over time for them. Instead, the value from the
+                    beginning of the round is always used, and it's increased by a bit every time you die. So effectively, you do get
+                    better items over time, but this behaviour ensures that the items can be properly seeded so that every player gets
+                    the same set of items after a given amount of deaths.
                 </p>
                 <p>
                     Crates have a chance to contain a random food item instead of an item based on the item tier.
